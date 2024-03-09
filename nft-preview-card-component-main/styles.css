@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    font-family: "Outfit",sans-serif;
+    font-size: 18px;
+    background-color: var(--main-BG);
+    color: var(--Soft-blue);
+    font-weight: 200;
+}
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: 300px;
+    background-color: var(--card-BG);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container ul{
+    list-style: none;
+    border-bottom: 2px solid var(--line);
+    /* padding-bottom:px; */
+    /* border-bottom: 5px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 7px;
+
+    
+}
+.container ul li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.container ul img{
+     margin-right: 8px;
+}
+.container ul :first-child{
+    color: var(--Cyan);
+}
+
+.container h2{
+    color: var(--White);
+    cursor: pointer;
+}
+
+.container h2:hover{
+    color: var(--Cyan);
+}
+
+
+.main-img-container img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 300px;
+
+   
+    
+}
+
+.main-img-container .overlay{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+   border-radius: 10px;
+    background-color: cyan;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+.overlay .eye{
+    width: 48px ;
+    height: 48px;
+   /* font-size: 6px;
+   object-fit:40px ;
+   object-position: 30px; */
+}
+.main-img-container:hover .overlay{
+    opacity: 0.7;
+}
+
+
+  
+
+
+
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+     padding-top: 40px; 
+}
+.attribution a {
+         color: hsl(228, 45%, 44%); 
+}
+
+.below-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.below-line img{
+    width: 40px;
+    outline:2px solid white ;
+    border-radius: 50%;
+    margin-right: 18px;
+    margin-left: 10px;
+
+}
+.name{
+    color: var(--White);
+}
+.name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+  
